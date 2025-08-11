@@ -7,7 +7,7 @@ set /p SVGFILE=Enter the name of your SVG file (e.g. your_decal.svg):
 REM Prompt for output PDF filename
 set /p PDFFILE=Enter the desired output PDF filename (or leave blank for default): 
 
-REM Run the Python script
+REM Run the Python script (this can take a minute)
 if "%PDFFILE%"=="" (
     python make_decals_sheet.py "%SVGFILE%"
 ) else (

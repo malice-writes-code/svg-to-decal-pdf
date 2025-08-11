@@ -1,17 +1,41 @@
 # svg-to-decal-pdf
 
-A Python script to convert an SVG image into a full PDF sheet of decals. Useful for hobbyists, modelers, or anyone needing to print custom-sized decals from a single SVG design.
+A Python script to convert an SVG ## Usage
+
+### Windows (Easy Mode)
+Double-click `run_decal_generator.bat` and follow the prompts.
+
+### Command Line (All Platforms)
+1. Place your SVG file (e.g., `your_decal.svg`) in this folder.
+2. Run the script from the command line:
+   ```sh
+   python make_decals_sheet.py your_decal.svg
+   ```
+   - This will create a PDF named `your_decal_decals.pdf` in the same folder.
+3. **Optional arguments:**
+   - To specify a custom output filename:
+     ```sh
+     python make_decals_sheet.py your_decal.svg --output custom_decals.pdf
+     ```full PDF sheet of decals. Useful for hobbyists, modelers, or anyone needing to print custom-sized decals from a single SVG design.
 
 **Note:** This script is designed specifically for SVG (vector) images. Adapting it for other image formats (like PNG, JPEG, BMP) may require significant changes due to differences in scaling and transparency handling. SVGs scale cleanly and support transparency natively, while raster images may lose quality when resized and handle transparency differently.
 
 ---
 
-## Quick Start (Windows)
+## Quick Start
 
+### Windows
 1. Download or clone this repository.
 2. Double-click `setup.bat` to install required Python packages.
 3. Place your SVG file in the project folder.
 4. Double-click `run_decal_generator.bat` and follow the prompts.
+5. Your PDF will be generated in the same folder.
+
+### Mac/Linux
+1. Download or clone this repository.
+2. Open Terminal in the project folder.
+3. Install dependencies: `pip install reportlab svglib`
+4. Run: `python make_decals_sheet.py your_file.svg`
 5. Your PDF will be generated in the same folder.
 
 ---
