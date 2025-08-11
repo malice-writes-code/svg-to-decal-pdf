@@ -82,7 +82,6 @@ You can create or edit SVG files using these free tools:
 - **[Boxy SVG](https://boxy-svg.com/)** - Browser-based editor
 
 ## ⚙️ Customization
-## ⚙️ Customization
 
 Want different decal sizes? Easy! 
 
