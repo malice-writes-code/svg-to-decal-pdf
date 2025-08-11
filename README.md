@@ -4,6 +4,24 @@ A Python script to convert an SVG image into a full PDF sheet of decals. Useful 
 
 **Note:** This script is designed specifically for SVG (vector) images. Adapting it for other image formats (like PNG, JPEG, BMP) may require significant changes due to differences in scaling and transparency handling. SVGs scale cleanly and support transparency natively, while raster images may lose quality when resized and handle transparency differently.
 
+---
+
+## Quick Start (Windows)
+
+1. Download or clone this repository.
+2. Double-click `setup.bat` to install required Python packages.
+3. Place your SVG file in the project folder.
+4. Double-click `run_decal_generator.bat` and follow the prompts.
+5. Your PDF will be generated in the same folder.
+
+---
+
+## Sample Files
+
+See the `samples/` folder for example SVG and output PDF files.
+
+---
+
 ## Features
 - Converts an SVG image into a one-page PDF with multiple rows of decals in various sizes.
 - Customizable decal sizes, number of rows, and layout.
@@ -21,22 +39,31 @@ A Python script to convert an SVG image into a full PDF sheet of decals. Useful 
    - Ensure Python is added to your system PATH.
 2. **Install dependencies:**
    Open a command prompt in this folder and run:
-   ```sh
-   pip install reportlab svglib
-   ```
+  ```sh
+  pip install reportlab svglib
+  ```
+  Or just double-click `setup.bat` (Windows only).
 
 ## Usage
 1. Place your SVG file (e.g., `your_decal.svg`) in this folder.
 2. Run the script from the command line:
-   ```sh
-   python make_decals_sheet.py your_decal.svg
-   ```
-   - This will create a PDF named `your_decal_decals.pdf` in the same folder.
+  ```sh
+  python make_decals_sheet.py your_decal.svg
+  ```
+  - This will create a PDF named `your_decal_decals.pdf` in the same folder.
+  Or, double-click `run_decal_generator.bat` and follow the prompts (Windows only).
 3. **Optional arguments:**
-   - To specify a custom output filename:
-     ```sh
-     python make_decals_sheet.py your_decal.svg --output custom_decals.pdf
-     ```
+  - To specify a custom output filename:
+    ```sh
+    python make_decals_sheet.py your_decal.svg --output custom_decals.pdf
+    ```
+## Editing SVGs
+
+You can create or edit SVG files using free tools like:
+- [Inkscape](https://inkscape.org/)
+- [Vectr](https://vectr.com/)
+- [Boxy SVG](https://boxy-svg.com/)
+
 
 ## Customization
 You can easily change the decal sizes, number of rows, and layout:

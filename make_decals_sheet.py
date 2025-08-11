@@ -55,7 +55,7 @@ def main():
         pdf_path = args.output
     else:
         base = os.path.splitext(os.path.basename(svg_path))[0]
-    pdf_path = f"{base}_decals.pdf"
+        pdf_path = f"{base}_decals.pdf"
 
     # Load SVG
     try:
