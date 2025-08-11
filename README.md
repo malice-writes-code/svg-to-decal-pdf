@@ -10,6 +10,8 @@ A Python script that converts SVG images into professional PDF sheets with multi
 
 **Note:** This script is designed specifically for SVG (vector) images. SVGs scale cleanly and support transparency natively, making them ideal for decal production.
 
+**🖨️ Printing Information:** This tool was built and tested specifically for **water transfer decal paper** using a **monochrome laser printer**. The output format and sizing are optimized for this combination to ensure clean, professional decal results.
+
 ---
 
 ## 🚀 Quick Start
