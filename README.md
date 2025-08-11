@@ -14,30 +14,39 @@ A Python script that converts SVG images into professional PDF sheets with multi
 
 ## 🚀 Quick Start
 
-### Windows (Recommended)
+### Windows (Recommended - Fully Automatic)
 1. **Download** or clone this repository
-2. **Install dependencies** - Double-click `install_deps.bat` 
+2. **Auto-install everything** - Double-click `install_deps.bat` 
+   - This will automatically install Python (if needed) and all required packages
+   - No manual setup required!
 3. **Add your SVG** - Place your SVG file in the project folder
 4. **Generate decals** - Double-click `run_decal_generator.bat` and follow the prompts
 5. **Done!** - Your PDF will be created in the same folder
 
-### Mac/Linux
-1. **Download** or clone this repository
+### Manual Installation (All Platforms)
+If you prefer to install Python manually or are on Mac/Linux:
+
+1. **Install Python 3.7+:**
+   - **Windows:** Download from [python.org](https://www.python.org/downloads/) 
+     - ⚠️ **Important:** Check "Add Python to PATH" during installation
+   - **Mac:** Use Homebrew: `brew install python` or download from python.org
+   - **Linux:** Usually pre-installed, or use your package manager: `sudo apt install python3 python3-pip`
+
 2. **Install dependencies:**
    ```bash
    pip install reportlab svglib
    ```
+
 3. **Generate decals:**
    ```bash
    python make_decals_sheet.py your_file.svg
    ```
-4. **Done!** - Your PDF will be created in the same folder
 
 ---
 
 ## 📋 Requirements
 
-- **Python 3.7+** - [Download from python.org](https://www.python.org/downloads/)
+- **Python 3.7+** - [Download from python.org](https://www.python.org/downloads/) OR use automatic installer
 - **Python packages:** `reportlab`, `svglib` (auto-installed with setup scripts)
 
 ## 📖 Detailed Usage
@@ -102,16 +111,22 @@ Want different decal sizes? Easy!
 
 ## 🔧 Troubleshooting
 
+**"Python is not recognized" error?**
+- **Windows:** Double-click `install_deps.bat` - it will install Python automatically
+- **Manual install:** Download Python from [python.org](https://www.python.org/downloads/) and check "Add Python to PATH"
+
 **"Module not found" error?**
-- Run `pip install reportlab svglib` or double-click `install_deps.bat` (Windows)
+- **Windows:** Run `install_deps.bat` again
+- **Manual:** Run `pip install reportlab svglib`
 
 **SVG not rendering correctly?**  
 - Try opening and re-saving your SVG in [Inkscape](https://inkscape.org/)
 - Make sure your SVG uses standard formatting
 
-**Python not found?**
-- Install Python from [python.org](https://www.python.org/downloads/) 
-- Make sure to check "Add Python to PATH" during installation
+**install_deps.bat fails to install Python?**
+- Check your internet connection
+- Try running as Administrator (right-click → "Run as administrator")
+- If it still fails, manually install Python from [python.org](https://www.python.org/downloads/)
 
 **Need help?**
 - Check the `samples/` folder for working examples
